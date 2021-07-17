@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
+import FacebookAuthLogin from '../../auth/facebook/FacebookAuthLogin';
 import GoogleAuthLogin from '../../auth/google/GoogleAuthLogin';
 import './LoginPage.css';
 
@@ -15,6 +16,7 @@ const LoginPage = () => {
             <ModalHeader toggle={toggleModal}>Log In</ModalHeader>
             <ModalBody>
                 <GoogleAuthLogin />
+                <FacebookAuthLogin />
             </ModalBody>
         </Modal>
     )
